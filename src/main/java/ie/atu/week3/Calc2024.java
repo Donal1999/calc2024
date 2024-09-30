@@ -23,26 +23,51 @@ public class Calc2024 {
         String operation = scan1.next();
 
 
-        switch(operation){
-            case "add": add(fristNum, secondNum); break ; // pass the firstNum and secondNum from the scanner
-            case "subtract": subtract(fristNum, secondNum);break;
-            case "multiply": multiply(fristNum, secondNum);break;
-            default: System.out.println("Invalid operation");break;
+        switch (operation) {
+            case "add":
+                add(fristNum, secondNum);
+                break; // pass the firstNum and secondNum from the scanner
+            case "subtract":
+                subtract(fristNum, secondNum);
+                break;
+            case "multiply":
+                multiply(fristNum, secondNum);
+                break;
+            case "divide":
+                divide(fristNum, secondNum);
+                break;
+            default:
+                System.out.println("Invalid operation");
+                break;
         }
 
     }
-    public static void add(double a, double b){
-        double sum = a + b ;
+
+    public static void add(double a, double b) {
+        double sum = a + b;
         System.out.println("Result is " + sum);
     }
 
-    public static void subtract(double a, double b){
-        double sum = a - b ;
+    public static void subtract(double a, double b) {
+        double sum = a - b;
         System.out.println("Result is " + sum);
     }
 
-    public static void multiply(double a, double b){
-        double sum = a * b ;
+    public static void multiply(double a, double b) {
+        double sum = a * b;
         System.out.println("Result is " + sum);
     }
+
+    public static void divide(double a, double b) {
+        if(b == 0){
+            System.out.println("invalid operation");
+
+        }
+        else{
+            double sum = a/b;
+            System.out.println("Result is " + sum);
+        }
+    }
+
+
 }
