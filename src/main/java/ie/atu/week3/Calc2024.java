@@ -26,6 +26,7 @@ public class Calc2024 {
         switch(operation){
             case "add": add(fristNum, secondNum); break ; // pass the firstNum and secondNum from the scanner
             case "subtract": subtract(fristNum, secondNum);break;
+            case "multiply": multiply(fristNum, secondNum);break;
             default: System.out.println("Invalid operation");break;
         }
 
@@ -37,6 +38,11 @@ public class Calc2024 {
 
     public static void subtract(double a, double b){
         double sum = a - b ;
+        System.out.println("Result is " + sum);
+    }
+
+    public static void multiply(double a, double b){
+        double sum = a * b ;
         System.out.println("Result is " + sum);
     }
 }
